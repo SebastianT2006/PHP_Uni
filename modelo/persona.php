@@ -5,7 +5,14 @@ class Persona {
     private $nombre;
     private $telefono;
 
-    function getCode(){
+    function __construct($codigo,$email,$nombre,$telefono){
+        $this ->codigo=$codigo
+        $this ->nombre=$nombre
+        $this ->telefono=$telefono
+        $this ->email=$email
+    }
+
+    function getCodigo(){
         return $this -> codigo;
     }
     function setCodigo($codigo){
